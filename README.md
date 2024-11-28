@@ -1,42 +1,28 @@
-AI Web Scraper
+**AI Web Scraper**
 An AI-powered web scraper designed to extract and parse specific information from websites. This project utilizes Langchain, Selenium, and BeautifulSoup to scrape, clean, and process web content. You can input a website URL, scrape its content, and use AI to extract relevant information based on your query.
 
-Table of Contents
-Project Overview
-Installation Instructions
-Usage
-Features
-Technologies Used
-Contributing
-License
-Acknowledgements
-Project Overview
+**Project Overview**
 This project is an AI web scraper that allows users to input a website URL, scrape its DOM content, clean it, and use AI models to extract information based on a user’s query. The AI model (via Langchain and Ollama) allows for advanced parsing and understanding of web content, making it highly versatile for different types of data extraction.
 
-Installation Instructions
+ **Installation Instructions**
 Follow these steps to set up the project on your local machine.
 
-Clone the repository
-bash
-Copy code
-git clone https://github.com/your-username/ai-web-scraper.git
-Navigate to the project directory
-bash
-Copy code
-cd ai-web-scraper
-Install dependencies
-Make sure to have pip installed, then install all the required packages via:
+1.Clone the repository
+git clone https://github.com/anoshandrews/AI-Web-Scraper.git
 
-bash
-Copy code
+2.Navigate to the project directory
+cd ai-web-scraper
+
+3.Install dependencies
+Make sure to have pip installed, then install all the required packages via:
 pip install -r requirements.txt
-Usage
+
+**Usage**
 Running the Web Scraper
 First, run the main.py file using Streamlit to start the web interface:
 
-bash
-Copy code
 streamlit run main.py
+
 The app will prompt you for a website URL. Enter a valid website URL in the text input box.
 
 Click the "Scrape Site" button to fetch the website content.
@@ -47,13 +33,13 @@ If you want to extract specific information, enter a description of what you wan
 
 The AI will process your query and return the extracted content.
 
-Features
+**Features**
 Web Scraping: Uses Selenium to load dynamic websites and extract the entire HTML DOM.
 Content Cleaning: Cleans the body content of the website by removing scripts, styles, and unnecessary whitespace.
 AI Parsing: The Langchain-powered Ollama model helps parse the DOM content based on user-provided descriptions and extract relevant data.
 Easy Web Interface: Simple user interface built with Streamlit to allow users to interact with the scraper and query the AI for data extraction.
 Technologies Used
-Python 3.x
+Python 3.13.0
 Streamlit: Web framework for building the UI.
 Langchain: Framework for AI-driven content parsing.
 Langchain Ollama: LLM-based model for parsing and extracting relevant information.
